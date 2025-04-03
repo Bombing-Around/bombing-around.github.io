@@ -1,21 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bombing Around</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <h1>Bombing Around</h1>
-    <h2>A Place For Learning</h2>
-    <p>I really don't have any idea what this page should be about</p>
-    <h3>Discord Bot?</h3>
-    <p>I guess we want to make a discord bot?</p>
-    <p><a href="http://https://replit.com/@ephbaum/DiscordJS-Guide">This</a> is an example on Replit based on <a href="http://https://discordjs.guide/" target="_blank">DiscordJS</a> </p>
-    <h3>Rock - Paper - Scissors?</h3>
-    <p>We talked about perhaps building a Rock, Paper, Scissors Discord Bot using DiscordJS, probably?</p>
-    <h3>What else?</h3>
-    <p>What other projects should we do?</p>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-gray-800">Bombing Around</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <span class="block">Welcome to</span>
+                    <span class="block text-indigo-600">Bombing Around</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    A place for learning, experimenting, and building cool stuff.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Current Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Trusty Rusty TODO List Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tasks text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Trusty Rusty TODO List</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A simple CLI todo list application built with Rust, featuring task
+                        management, categories, and configuration options.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/trusty_rusty_todo_list"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rust Loan Calculator Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calculator text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Rust Loan Calculator</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A loan calculator built with Rust that accepts and prompts for missing
+                        values to calculate loan variables.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/loan_calculator"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discord Bot Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-discord text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Discord Bot</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Building a Discord bot using DiscordJS to enhance server interactions
+                        and fun.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://replit.com/@ephbaum/DiscordJS-Guide"
+                            class="text-indigo-600 hover:text-indigo-800">Replit Example</a>
+                        <a href="https://discordjs.guide/" class="text-indigo-600 hover:text-indigo-800"
+                            target="_blank">DiscordJS Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12 mt-16">Planned Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dice Roller Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-dice text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Dice Roller</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A dice rolling application for tabletop games and random number
+                        generation.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/dice-roller"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rock Paper Scissors Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gamepad text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Rock Paper Scissors</h3>
+                    </div>
+                    <p class="text-gray-600">A fun Discord bot implementation of the classic Rock Paper Scissors game.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Future Projects Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Future Projects</h3>
+                    </div>
+                    <p class="text-gray-600">Always open to new ideas and exciting projects. What should we build next?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">About</h2>
+            <div class="text-center">
+                <img src="https://avatars.githubusercontent.com/u/121840503" alt="GitHub Avatar"
+                    class="w-32 h-32 rounded-lg mx-auto mb-6 shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900">
+                    <span class="block">Why </span>
+                    <span class="block text-indigo-600">Bombing Around?</span>
+                </h3>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    "Bombing Around" is something a old friend used to say when we were kids. It meant to be all over
+                    the place, to do a little bit of everything.
+                </p>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Since my last name is Baum, I thought it would be a fun name for a project org that I hoped others
+                    might join me in.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Contact</h2>
+            <div class="text-center">
+                <p class="text-lg text-gray-600 mb-4">Want to get in touch? Feel free to reach out!</p>
+                <a href="mailto:bombing_around@outlook.com"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    <i class="fas fa-envelope mr-2"></i>
+                    bombing_around@outlook.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <p>&copy; <span id="currentYear"></span> Bombing Around. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
