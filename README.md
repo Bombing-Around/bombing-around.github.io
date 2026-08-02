@@ -2,6 +2,14 @@
 
 A place for learning, experimenting, and building cool stuff.
 
+## Featured Project
+
+### 👻 Horror Movie Season
+
+A SvelteKit + Firebase app for tracking and celebrating horror movie season, built to help fans plan their scariest watchlists.
+
+🔗 [horrormovieseason.com](https://horrormovieseason.com)
+
 ## Current Projects
 
 ### Trusty Rusty TODO List
