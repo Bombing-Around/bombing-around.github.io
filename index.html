@@ -3,332 +3,331 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0a0b0d">
     <title>Bombing Around</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="A place for learning, experimenting, and building cool stuff.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Unbounded:wght@700;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-gray-800">Bombing Around</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
-                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
-                </div>
+<body>
+    <nav class="nav">
+        <div class="wrap">
+            <a href="#" class="brand" aria-label="Bombing Around, back to top">
+                <i class="fas fa-bomb" aria-hidden="true"></i><span>Bombing Around</span>
+            </a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="bg-white">
-        <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24">
-            <div class="text-center">
-                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    <span class="block">Welcome to</span>
-                    <span class="block text-indigo-600">Bombing Around</span>
-                </h1>
-                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                    A place for learning, experimenting, and building cool stuff.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Featured Project: Horror Movie Season -->
-    <div class="bg-gray-900 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center">
-                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-orange-600 mb-6">
-                    <i class="fas fa-ghost text-3xl text-white"></i>
-                </div>
-                <span
-                    class="inline-block px-3 py-1 text-xs font-semibold tracking-wide text-orange-400 uppercase bg-orange-900/40 rounded-full mb-4">Featured
-                    Project</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Horror Movie Season</h2>
-                <p class="max-w-2xl mx-auto text-lg text-gray-300 mb-8">
-                    A SvelteKit + Firebase app for planning and tracking your horror movie season: build a season
-                    watchlist, log what you watch (including films OMDb has never heard of), and earn streaks,
-                    awards, and a public profile along the way.
-                </p>
-                <a href="https://horrormovieseason.com" target="_blank" rel="noopener"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors duration-300">
-                    <i class="fas fa-external-link-alt mr-2"></i>
-                    Visit horrormovieseason.com
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div id="projects" class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">In Progress</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- 6DoF Flight Lab Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-rocket text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">6DoF Flight Lab</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A browser prototype for a Descent-style 6DoF shooter, built to find the right movement
-                        feel before committing to an engine: inertial flight, a limited-charge dampener, procedural
-                        voxel caves, drones, and ring courses against the clock.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://6dof.xfbomb223x.com" target="_blank" rel="noopener"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fas fa-play mr-1"></i> Play it
-                        </a>
-                    </div>
+    <main>
+        <header class="hero">
+            <!-- A lit fuse wandering all over the place, which is the whole idea. -->
+            <svg class="fuse" viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                    <path id="fuse-path" pathLength="1000"
+                        d="M -40 455 C 180 470 380 440 540 420 S 720 360 770 280 C 820 200 930 150 950 220 C 970 290 870 320 855 250 C 840 180 980 70 1080 110 S 1180 280 1260 230" />
+                </defs>
+                <use href="#fuse-path" class="fuse-cord" />
+                <use href="#fuse-path" class="fuse-spark" />
+            </svg>
+            <div class="wrap">
+                <span class="eyebrow">// a little bit of everything</span>
+                <h1>Bombing<span class="accent">Around</span></h1>
+                <p class="lede">A place for learning, experimenting, and building cool stuff.</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="#projects">See the projects <i class="fas fa-arrow-down"
+                            aria-hidden="true"></i></a>
+                    <a class="btn btn-ghost" href="https://github.com/Bombing-Around"><i class="fab fa-github"
+                            aria-hidden="true"></i> GitHub</a>
                 </div>
             </div>
+        </header>
 
-            <!-- Dice Roller Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-dice text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Dice Roller</h3>
+        <!-- Featured -->
+        <section class="section" aria-labelledby="featured-title">
+            <div class="wrap">
+                <article class="feature">
+                    <div>
+                        <span class="badge"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>
+                        <h3 id="featured-title">Horror Movie Season</h3>
+                        <p>A SvelteKit + Firebase app for planning and tracking your horror movie season: build a
+                            season watchlist, log what you watch (including films OMDb has never heard of), and earn
+                            streaks, awards, and a public profile along the way.</p>
+                        <ul class="tags">
+                            <li>SvelteKit</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <a class="btn btn-primary" href="https://horrormovieseason.com" target="_blank"
+                            rel="noopener">Visit horrormovieseason.com <i class="fas fa-arrow-up-right-from-square"
+                                aria-hidden="true"></i></a>
                     </div>
-                    <p class="text-gray-600 mb-4">A multiplayer TTRPG dice roller with real-time sync. Create a room,
-                        share the six-character code, and roll together — dice notation (2d20+5), a shared session
-                        log, and JSON export. No accounts; rooms are ephemeral.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/dice-roller"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
+                    <div class="feature-mark" aria-hidden="true"><i class="fas fa-ghost"></i></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- In progress -->
+        <section id="projects" class="section" aria-labelledby="in-progress-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="in-progress-title">In Progress</h2>
+                    <p>Actively being poked at.</p>
+                </div>
+                <div class="grid">
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-rocket" aria-hidden="true"></i></span>
+                            <span class="status">Live</span>
+                        </div>
+                        <h3>6DoF Flight Lab</h3>
+                        <p>A browser prototype for a Descent-style 6DoF shooter, built to find the right movement
+                            feel before committing to an engine: inertial flight, a limited-charge dampener,
+                            procedural voxel caves, drones, and ring courses against the clock.</p>
+                        <ul class="tags">
+                            <li>TypeScript</li>
+                            <li>three.js</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://6dof.xfbomb223x.com" target="_blank" rel="noopener"><i
+                                    class="fas fa-play" aria-hidden="true"></i> Play it</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-dice" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Dice Roller</h3>
+                        <p>A multiplayer TTRPG dice roller with real-time sync. Create a room, share the
+                            six-character code, and roll together — dice notation (2d20+5), a shared session log,
+                            and JSON export. No accounts; rooms are ephemeral.</p>
+                        <ul class="tags">
+                            <li>Node</li>
+                            <li>WebSockets</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/dice-roller"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-tasks" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Trusty Rusty TODO List</h3>
+                        <p>A CLI todo list in Rust. Tasks belong to categories, with priorities, descriptions, soft
+                            delete/restore, and a choice of JSON or SQLite storage.</p>
+                        <ul class="tags">
+                            <li>Rust</li>
+                            <li>SQLite</li>
+                            <li>CLI</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/trusty_rusty_todo_list"><i
+                                    class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-keyboard" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>vim-arcade</h3>
+                        <p>Three small games inside a Vim or Neovim buffer: 2048, a turn-based dungeon crawler, and
+                            a ball sort puzzle. One legacy-VimScript implementation for both editors, no
+                            dependencies.</p>
+                        <ul class="tags">
+                            <li>VimScript</li>
+                            <li>Neovim</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/vim-arcade"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-tower-broadcast" aria-hidden="true"></i></span>
+                            <span class="status">Live</span>
+                        </div>
+                        <h3>Dit Deck</h3>
+                        <p>A playable Morse code trainer card: a straight key with sidetone, a live decode chart,
+                            Koch-order drills, and a speed run that ramps the WPM as you copy by ear. No build
+                            step.</p>
+                        <ul class="tags">
+                            <li>JavaScript</li>
+                            <li>Web Audio</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://bombing-around.github.io/dit-deck/"><i class="fas fa-play"
+                                    aria-hidden="true"></i> Play it</a>
+                            <a href="https://github.com/Bombing-Around/dit-deck"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-bomb" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Rusty Minesweeper</h3>
+                        <p>Minesweeper in the terminal: one Rust file, zero dependencies. Raw mode via stty, ANSI
+                            drawing, a hand-rolled RNG, a safe first dig, and chording.</p>
+                        <ul class="tags">
+                            <li>Rust</li>
+                            <li>Terminal</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/rustyminesweeper"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-calculator" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Rust Loan Calculator</h3>
+                        <p>A single-file, zero-dependency Rust exercise. Calculates a monthly payment from
+                            principal, rate, and term, interactively or from arguments, with tests in CI.</p>
+                        <ul class="tags">
+                            <li>Rust</li>
+                            <li>CLI</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/loan_calculator"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- On the shelf -->
+        <section class="section" aria-labelledby="shelf-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="shelf-title">On the Shelf</h2>
+                    <p>Parked, not forgotten.</p>
+                </div>
+                <div class="grid">
+                    <article class="card shelved">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-play-circle" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Vimeo Player for VS Code</h3>
+                        <p>A VS Code extension that embeds Vimeo videos in a dockable panel. Started as a generic
+                            YouTube/Vimeo/Twitch player and narrowed to Vimeo after hitting the other platforms'
+                            embed policies.</p>
+                        <ul class="tags">
+                            <li>VS Code</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/vscode_vimeo_player"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card shelved">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fab fa-twitter" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Twitter Clone</h3>
+                        <p>A Twitter clone built as a teaching project with the kiddo.</p>
+                        <div class="links">
+                            <a href="https://github.com/Bombing-Around/twitter-clone"><i class="fab fa-github"
+                                    aria-hidden="true"></i> GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card shelved">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-shield-alt" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Foam Flinging Sentry Turret</h3>
+                        <p>A foam-dart sentry turret. Currently a great name and not much else.</p>
+                        <ul class="tags">
+                            <li>Hardware</li>
+                        </ul>
+                    </article>
+
+                    <article class="card shelved">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fas fa-hand-scissors" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Rock Paper Scissors</h3>
+                        <p>A Discord bot take on the classic.</p>
+                        <ul class="tags">
+                            <li>Discord</li>
+                        </ul>
+                    </article>
+
+                    <article class="card shelved">
+                        <div class="card-top">
+                            <span class="icon-tile"><i class="fab fa-discord" aria-hidden="true"></i></span>
+                        </div>
+                        <h3>Discord Bot Experiments</h3>
+                        <p>Poking at DiscordJS to see what's possible.</p>
+                        <ul class="tags">
+                            <li>discord.js</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://replit.com/@ephbaum/DiscordJS-Guide" target="_blank" rel="noopener"><i
+                                    class="fas fa-code" aria-hidden="true"></i> Replit example</a>
+                            <a href="https://discordjs.guide/" target="_blank" rel="noopener"><i class="fas fa-book"
+                                    aria-hidden="true"></i> DiscordJS guide</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="about-title">About</h2>
+                </div>
+                <div class="about">
+                    <img src="https://avatars.githubusercontent.com/u/121840503" alt="Bombing Around avatar"
+                        width="120" height="120">
+                    <div>
+                        <h3>Why <em>Bombing Around?</em></h3>
+                        <p>"Bombing Around" is something an old friend used to say when we were kids. It meant to
+                            be all over the place, to do a little bit of everything.</p>
+                        <p>Since my last name is Baum, I thought it would be a fun name for a project org that I
+                            hoped others might join me in.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Trusty Rusty TODO List Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-tasks text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Trusty Rusty TODO List</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A CLI todo list in Rust. Tasks belong to categories, with
-                        priorities, descriptions, soft delete/restore, and a choice of JSON or SQLite storage.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/trusty_rusty_todo_list"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+        <!-- Contact -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="wrap">
+                <h2 id="contact-title" class="eyebrow">// want to get in touch?</h2>
+                <p><a class="mail" href="mailto:bombing_around@outlook.com">bombing_around@outlook.com</a></p>
             </div>
+        </section>
+    </main>
 
-            <!-- vim-arcade Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-keyboard text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">vim-arcade</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Three small games inside a Vim or Neovim buffer: 2048, a turn-based dungeon crawler, and a
-                        ball sort puzzle. One legacy-VimScript implementation for both editors, no dependencies.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/vim-arcade"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dit Deck Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-tower-broadcast text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Dit Deck</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A playable Morse code trainer card: a straight key with sidetone, a live decode chart,
-                        Koch-order drills, and a speed run that ramps the WPM as you copy by ear. No build step.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://bombing-around.github.io/dit-deck/"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fas fa-play mr-1"></i> Play it
-                        </a>
-                        <a href="https://github.com/Bombing-Around/dit-deck"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rusty Minesweeper Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-bomb text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Rusty Minesweeper</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Minesweeper in the terminal: one Rust file, zero dependencies. Raw mode via stty, ANSI
-                        drawing, a hand-rolled RNG, a safe first dig, and chording.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/rustyminesweeper"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Rust Loan Calculator Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-calculator text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Rust Loan Calculator</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A single-file, zero-dependency Rust exercise. Calculates a monthly
-                        payment from principal, rate, and term, interactively or from arguments, with tests in CI.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/loan_calculator"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12 mt-16">On the Shelf</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Vimeo Player for VS Code Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-play-circle text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Vimeo Player for VS Code</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A VS Code extension that embeds Vimeo videos in a dockable panel.
-                        Started as a generic YouTube/Vimeo/Twitch player and narrowed to Vimeo after hitting the
-                        other platforms' embed policies.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/vscode_vimeo_player"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Twitter Clone Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-twitter text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Twitter Clone</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A Twitter clone built as a teaching project with the kiddo.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/twitter-clone"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Foam Flinging Sentry Turret Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-shield-alt text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Foam Flinging Sentry Turret</h3>
-                    </div>
-                    <p class="text-gray-600">A foam-dart sentry turret. Currently a great name and not much
-                        else.</p>
-                </div>
-            </div>
-
-            <!-- Rock Paper Scissors Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-gamepad text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Rock Paper Scissors</h3>
-                    </div>
-                    <p class="text-gray-600">A Discord bot take on the classic.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Discord Bot Experiments Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-discord text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Discord Bot Experiments</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Poking at DiscordJS to see what's possible.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://replit.com/@ephbaum/DiscordJS-Guide"
-                            class="text-indigo-600 hover:text-indigo-800">Replit Example</a>
-                        <a href="https://discordjs.guide/" class="text-indigo-600 hover:text-indigo-800"
-                            target="_blank">DiscordJS Guide</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="bg-white py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">About</h2>
-            <div class="text-center">
-                <img src="https://avatars.githubusercontent.com/u/121840503" alt="GitHub Avatar"
-                    class="w-32 h-32 rounded-lg mx-auto mb-6 shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900">
-                    <span class="block">Why </span>
-                    <span class="block text-indigo-600">Bombing Around?</span>
-                </h3>
-                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                    "Bombing Around" is something an old friend used to say when we were kids. It meant to be all over
-                    the place, to do a little bit of everything.
-                </p>
-                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                    Since my last name is Baum, I thought it would be a fun name for a project org that I hoped others
-                    might join me in.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="bg-gray-50 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Contact</h2>
-            <div class="text-center">
-                <p class="text-lg text-gray-600 mb-4">Want to get in touch? Feel free to reach out!</p>
-                <a href="mailto:bombing_around@outlook.com"
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-                    <i class="fas fa-envelope mr-2"></i>
-                    bombing_around@outlook.com
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
-        <div class="max-w-6xl mx-auto px-4 py-8">
-            <div class="text-center">
-                <p>&copy; <span id="currentYear"></span> Bombing Around. All rights reserved.</p>
-            </div>
+    <footer class="footer">
+        <div class="wrap">
+            <span>&copy; <span id="currentYear">2026</span> Bombing Around</span>
+            <a href="https://github.com/Bombing-Around">github.com/Bombing-Around</a>
         </div>
     </footer>
     <script>

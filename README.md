@@ -1,7 +1,7 @@
 # Bombing Around
 
-Source for [bombing-around.github.io](https://bombing-around.github.io) — a single static
-`index.html` served by GitHub Pages.
+Source for [bombing-around.github.io](https://bombing-around.github.io) — a static
+`index.html` and `style.css` served by GitHub Pages, with no build step.
 
 A place for learning, experimenting, and building cool stuff. The project list below mirrors
 the org profile at [github.com/Bombing-Around](https://github.com/Bombing-Around)
