@@ -16,7 +16,7 @@ A SvelteKit + Firebase app for planning and tracking your horror movie season: b
 season watchlist, log what you watch (including films OMDb has never heard of), and earn
 streaks, awards, and a public profile along the way.
 
-🔗 [horrormovieseason.com](https://horrormovieseason.com) · [Source](https://github.com/Bombing-Around/horror_movie_season)
+🔗 [horrormovieseason.com](https://horrormovieseason.com)
 
 ## In Progress
 
@@ -70,14 +70,6 @@ keys.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Rusty_Minesweeper-blue?style=flat&logo=github)](https://github.com/Bombing-Around/rustyminesweeper)
 
-### Vimeo Player for VS Code
-
-A VS Code extension that embeds Vimeo videos in a dockable panel. Started life as a generic
-YouTube/Vimeo/Twitch player and narrowed to Vimeo after running into the other platforms'
-embed policies — the write-up of what worked and what didn't is in the repo.
-
-[![GitHub](https://img.shields.io/badge/GitHub-Vimeo_Player_for_VS_Code-blue?style=flat&logo=github)](https://github.com/Bombing-Around/vscode_vimeo_player)
-
 ### Rust Loan Calculator
 
 A single-file, zero-dependency Rust exercise. It calculates a monthly payment from
@@ -88,6 +80,12 @@ tests in CI. Solving for whichever variable you *didn't* supply is still on the 
 
 ## On the Shelf
 
+- **Vimeo Player for VS Code** — a VS Code extension that embeds Vimeo videos in a
+  dockable panel. Started as a generic YouTube/Vimeo/Twitch player and narrowed to Vimeo after
+  running into the other platforms' embed policies; the write-up is in the repo.
+  [Repo](https://github.com/Bombing-Around/vscode_vimeo_player)
+- **Twitter Clone** — a Twitter clone built as a teaching project with the kiddo.
+  [Repo](https://github.com/Bombing-Around/twitter-clone)
 - **Foam Flinging Sentry Turret** — a foam-dart sentry turret. Currently a great name and not
   much else. [Repo](https://github.com/Bombing-Around/foam-flinging-sentry-turret)
 - **Rock Paper Scissors** — a Discord bot take on the classic.
