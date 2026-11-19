@@ -30,15 +30,6 @@ Vite + TypeScript + three.js, with a deterministic headless sim checked in CI.
 
 🔗 **[6dof.xfbomb223x.com](https://6dof.xfbomb223x.com)**
 
-### xfbomb223x.com
-
-The gaming persona site: a lifetime of games, from Pong typed in from a spiral-bound BASIC
-manual on a TRS-80 Model III to a Steam library nearly a thousand deep. Green-screen
-terminal styling, block-pixel headings, and attract-mode Pong behind the splash. Astro,
-static, on Cloudflare.
-
-🔗 **[xfbomb223x.com](https://xfbomb223x.com)**
-
 ### Dice Roller
 
 A multiplayer TTRPG dice roller with real-time sync. Create a room, share the six-character
