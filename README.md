@@ -87,7 +87,7 @@ tests in CI. Solving for whichever variable you *didn't* supply is still on the 
 - **Twitter Clone** — a Twitter clone built as a teaching project with the kiddo.
   [Repo](https://github.com/Bombing-Around/twitter-clone)
 - **Foam Flinging Sentry Turret** — a foam-dart sentry turret. Currently a great name and not
-  much else. [Repo](https://github.com/Bombing-Around/foam-flinging-sentry-turret)
+  much else.
 - **Rock Paper Scissors** — a Discord bot take on the classic.
 - **Discord bot experiments** — poking at [DiscordJS](https://discordjs.guide/); there's a
   [Replit example](https://replit.com/@ephbaum/DiscordJS-Guide) knocking around.
