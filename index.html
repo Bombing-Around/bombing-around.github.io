@@ -71,6 +71,25 @@
     <div id="projects" class="max-w-6xl mx-auto px-4 py-16">
         <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">In Progress</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 6DoF Flight Lab Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-rocket text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">6DoF Flight Lab</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A browser prototype for a Descent-style 6DoF shooter, built to find the right movement
+                        feel before committing to an engine: inertial flight, a limited-charge dampener, procedural
+                        voxel caves, drones, and ring courses against the clock.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://6dof.xfbomb223x.com" target="_blank" rel="noopener"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fas fa-play mr-1"></i> Play it
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Dice Roller Card -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6">
@@ -108,18 +127,57 @@
                 </div>
             </div>
 
-            <!-- Vimeo Player for VS Code Card -->
+            <!-- vim-arcade Card -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-play-circle text-indigo-600 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold text-gray-900">Vimeo Player for VS Code</h3>
+                        <i class="fas fa-keyboard text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">vim-arcade</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">A VS Code extension that embeds Vimeo videos in a dockable panel.
-                        Started as a generic YouTube/Vimeo/Twitch player and narrowed to Vimeo after hitting the
-                        other platforms' embed policies.</p>
+                    <p class="text-gray-600 mb-4">Three small games inside a Vim or Neovim buffer: 2048, a turn-based dungeon crawler, and a
+                        ball sort puzzle. One legacy-VimScript implementation for both editors, no dependencies.</p>
                     <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/vscode_vimeo_player"
+                        <a href="https://github.com/Bombing-Around/vim-arcade"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dit Deck Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tower-broadcast text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Dit Deck</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A playable Morse code trainer card: a straight key with sidetone, a live decode chart,
+                        Koch-order drills, and a speed run that ramps the WPM as you copy by ear. No build step.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://bombing-around.github.io/dit-deck/"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fas fa-play mr-1"></i> Play it
+                        </a>
+                        <a href="https://github.com/Bombing-Around/dit-deck"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rusty Minesweeper Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bomb text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Rusty Minesweeper</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Minesweeper in the terminal: one Rust file, zero dependencies. Raw mode via stty, ANSI
+                        drawing, a hand-rolled RNG, a safe first dig, and chording.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/rustyminesweeper"
                             class="text-indigo-600 hover:text-indigo-800">
                             <i class="fab fa-github mr-1"></i> GitHub
                         </a>
@@ -148,6 +206,42 @@
 
         <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12 mt-16">On the Shelf</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Vimeo Player for VS Code Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-play-circle text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Vimeo Player for VS Code</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A VS Code extension that embeds Vimeo videos in a dockable panel.
+                        Started as a generic YouTube/Vimeo/Twitch player and narrowed to Vimeo after hitting the
+                        other platforms' embed policies.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/vscode_vimeo_player"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Twitter Clone Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-twitter text-indigo-600 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Twitter Clone</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">A Twitter clone built as a teaching project with the kiddo.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Bombing-Around/twitter-clone"
+                            class="text-indigo-600 hover:text-indigo-800">
+                            <i class="fab fa-github mr-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Foam Flinging Sentry Turret Card -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="p-6">
@@ -155,14 +249,8 @@
                         <i class="fas fa-shield-alt text-indigo-600 text-2xl mr-2"></i>
                         <h3 class="text-xl font-bold text-gray-900">Foam Flinging Sentry Turret</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">A foam-dart sentry turret. Currently a great name and not much
+                    <p class="text-gray-600">A foam-dart sentry turret. Currently a great name and not much
                         else.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/Bombing-Around/foam-flinging-sentry-turret"
-                            class="text-indigo-600 hover:text-indigo-800">
-                            <i class="fab fa-github mr-1"></i> GitHub
-                        </a>
-                    </div>
                 </div>
             </div>
 
