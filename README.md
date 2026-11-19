@@ -60,6 +60,8 @@ A playable Morse code trainer card: a straight key with sidetone, a live decode 
 lights your path as you key, Koch-order drills, and a speed run that ramps the WPM while you
 copy by ear. Plain HTML, CSS, and ES modules — no build step.
 
+🔗 **[bombing-around.github.io/dit-deck](https://bombing-around.github.io/dit-deck/)**
+
 [![GitHub](https://img.shields.io/badge/GitHub-Dit_Deck-blue?style=flat&logo=github)](https://github.com/Bombing-Around/dit-deck)
 
 ### Rusty Minesweeper
